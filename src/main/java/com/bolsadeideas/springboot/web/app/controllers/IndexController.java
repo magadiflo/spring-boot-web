@@ -16,6 +16,10 @@ import com.bolsadeideas.springboot.web.app.models.Usuario;
 @RequestMapping("/app")
 public class IndexController {
 	
+	/**
+	 * Se está inyectando desde el archivo textos.properties, 
+	 * que fue configurado en la clase TextosPropertiesConfig.java
+	 */
 	@Value("${texto.indexcontroller.index.titulo}")
 	private String textoIndex;
 	
